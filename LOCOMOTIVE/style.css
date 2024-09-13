@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+/* In locomotive you cant use % because % gets height from the parent  */
+/* and you can't target partent in locomotive */
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(71, 227, 255);
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(37, 160, 182);
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(10, 89, 103);
+}
+#page2 #img-div {
+    height: 100%;
+    width: 35%;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+#img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
